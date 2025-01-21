@@ -3,7 +3,7 @@ from typing import List
 
 
 Hyp = "-e ."
-def get_requirments(file_path:str)->List[str]:
+def get_requirments(file_path:str)->List[str]:  # ->List[str] is only for our refernece, not necessary to write tells that he return type is list for future self reference ans ":str" does that it tells that "file type" is string
     
     """
     this function wil return list of requirments
@@ -26,6 +26,5 @@ author = "Archit",
 author_email = "pragyesharchit8@gmail.com",
 packages = find_packages(),
 install_requires = get_requirments("requirments.txt")
-
 
 )
